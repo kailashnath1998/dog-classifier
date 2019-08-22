@@ -1,5 +1,7 @@
 # Dog Classifier
 
+![Intro](./images/introduction.png)
+
 ## Introduction
 
 As part of this project, I built and trained a neural network model using converged neural networks (CNN), using 8,351 photos of 133 dog breeds. CNN is a type of deep neural network commonly used to analyze image data. Typically, CNN architecture includes convolutional layers, activation function, cluster layers, fully connected layers, and normalization layers. Transfer learning is a technique that allows you to reuse a model developed for one task as a starting point for another task.
@@ -131,7 +133,7 @@ VGG19_model.summary()
 
 The architecture of the model :
 
-[]images
+![Network Arch](./images/network.PNG)
 
 ### Model Metric
 
@@ -186,3 +188,25 @@ def dog_breed_pred(path):
 ## Results
 
 The accuracy of the final model on test dataset is about 72.9665%%, which is not bad. Originally, I trained a CNN model from scratch without using Transfer Learning, the accuracy was only 15.3110%. Then, I created a CNN model using transfer learning and VGG-19 with Global Average Pooling and only one fully connected layer, and was able to reach an accuracy of about 53%. Finally, I added a second fully connected layer to the classifier, and was able to achieve 73% accuracy.
+
+When given an image of a dog, the final model predicts the dog breed. For example,
+
+![Dog Result 1](./images/result1.PNG)
+
+![Dog Result 2](./images/result2.PNG)
+
+If a human is in the input image, it identifies the most resembling dog breed based on the person’s face.
+
+![Human](./images/result3.png)
+
+When the image does not contain a human or a dog, it will tell you that there is no human or dog detected. For example,
+
+![Other](./images/result4.png)
+
+## Conclusion
+
+Thanks to the transfer learning technique, I was able to train a model with relatively small dataset, and achieved pretty good accuracy. In addition, the model was trained within a short period of time, which is quite efficient. The main reason is we can reuse the weights trained by machine learning experts using millions of images.
+
+The initial model was a CNN from scratch, which did not work well. It only reached an accuracy of 15.3110%.I think it is because the size of dataset is relatively small, and the model architecture might not be well designed.
+
+There are a few possible improvements for the model. First, the parameters of fully connected layers, such as number of layers, number of nodes, dropout percentages, might be tweaked to get better results. Second, using a different optimizer or evaluation metric may also improve model performance. Third, data augmentation could also improve the final model accuracy, as it will generate more training data.

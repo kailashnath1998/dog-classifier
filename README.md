@@ -19,7 +19,7 @@ Beyond the Anaconda distribution of Python, the following packages need to be in
 * tqdm
 * scikit-learn
 * keras
-* tensorflow==1.0.0
+* tensorflow
 
 ## Project Overview
 
@@ -63,4 +63,4 @@ Below are main foleders/files for this project:
 2. If a dog image is supplied, the model gives a prediction of the dog breed.
 3. The model is also able to identify the most resembling dog breed of a person
 
-More discussions can be found in this blog: <url>
+More discussions can be found in this blog: [https://kailashnath1998.github.io/dog-classifier/](https://kailashnath1998.github.io/dog-classifier/)

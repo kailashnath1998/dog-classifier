@@ -13,7 +13,7 @@ This article will describe the technical aspect of this project from start to fi
 The full dataset used by this project contains 8,351 images of 133 categories of dogs. The data is separated into three folders for training, validation, and test set. The load_files function from the scikit-learn library is used to import the datasets.
 
 ```python
-from sklearn.datasets import load_files       
+from sklearn.datasets import load_files
 from keras.utils import np_utils
 import numpy as np
 from glob import glob
@@ -129,7 +129,7 @@ VGG19_model.add(Dense(133, activation='softmax'))
 VGG19_model.summary()
 ```
 
-The architecture of the model : 
+The architecture of the model :
 
 []images
 
@@ -147,10 +147,10 @@ The model was trained for 25 epochs using ```categorical crossentropy``` as loss
 
 VGG19_model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
 
-checkpointer = ModelCheckpoint(filepath='saved_models/weights.best.VGG19.hdf5', 
+checkpointer = ModelCheckpoint(filepath='saved_models/weights.best.VGG19.hdf5',
                                verbose=1, save_best_only=True)
 
-VGG19_model.fit(train_VGG19, train_targets, 
+VGG19_model.fit(train_VGG19, train_targets,
           validation_data=(valid_VGG19, valid_targets),
           epochs=25, batch_size=32, callbacks=[checkpointer], verbose=1)
 ```

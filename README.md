@@ -55,6 +55,8 @@ Below are main foleders/files for this project:
 
 7. images: a few images to test the model manually
 
+8. dog_app.html: HTML export of the notebook
+
 ## Results
 
 1. The model was able to reach an accuracy of 72.9665% accuracy on test data using VGG19 model

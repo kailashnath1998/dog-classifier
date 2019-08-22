@@ -3,7 +3,7 @@
 ## Table of Contents
 
 1. [Installation](#installation)
-2. [Project Overview](#overview)
+2. [Project Overview](#projectoverview)
 3. [File Descriptions](#files)
 4. [Results](#results)
 
@@ -47,9 +47,7 @@ Below are main foleders/files for this project:
     * weights.best.Resnet50.hdf5: saved model weights with best validation loss ( Transfer Learning Resnet50 )
     * weights.best.from_scratch.hdf5: saved model weights with best validation loss ( custom CNN network )
 
-4. custom_images
-
-    * image files for test
+4. custom_images: a few image files for test
 
 5. dog_app.ipynb: a notebook used to build and train the dog breeds classification model
 
@@ -64,5 +62,3 @@ Below are main foleders/files for this project:
 3. The model is also able to identify the most resembling dog breed of a person
 
 More discussions can be found in this blog: <url>
-
-

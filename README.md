@@ -197,11 +197,11 @@ When given an image of a dog, the final model predicts the dog breed. For exampl
 
 If a human is in the input image, it identifies the most resembling dog breed based on the person’s face.
 
-![Human](./images/result3.png)
+![Human](./images/result3.PNG)
 
 When the image does not contain a human or a dog, it will tell you that there is no human or dog detected. For example,
 
-![Other](./images/result4.png)
+![Other](./images/result4.PNG)
 
 ## Conclusion
 
